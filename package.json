@@ -1,0 +1,42 @@
+{
+  "name": "powerbot",
+  "version": "1.0.0",
+  "description": "A powerful browser automation system for web game automation with scraping and data persistence",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "example": "tsx src/examples/basic-automation.ts",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "automation",
+    "playwright",
+    "scraping",
+    "web-game",
+    "bot",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "playwright": "^1.41.0",
+    "sql.js": "^1.10.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/sql.js": "^1.4.9",
+    "nodemon": "^3.0.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
